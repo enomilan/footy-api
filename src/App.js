@@ -3,6 +3,26 @@ import {useEffect, useState} from 'react'
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+
+    async function fetchData () {
+        const res = await fetch('https://api-football-v1.p.rapidapi.com/v3/players?team=33&season=2020',
+        {
+          "headers": {
+          "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+          "x-rapidapi-key": "ffef827568msh1decf807055fb86p1b5c15jsndfd56fb80151" }
+        })
+        const player = await res.json()
+                                  
+        setPlayers(player)
+            
+        
+    }
+     
+    fetchData()
+}, [])
+
   return (
     <div className="App">
       <header className="App-header">
