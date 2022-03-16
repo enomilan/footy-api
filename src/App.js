@@ -7,6 +7,9 @@ import './App.css';
 
 function App() {
 
+  const [team, setTeam]
+  
+
   useEffect(() => {
 
     async function fetchData () {
