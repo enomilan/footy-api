@@ -7,8 +7,9 @@ import './App.css';
 
 function App() {
 
-  const [team, setTeam]
-  
+  const [team, setTeam] = useState([])
+  const [player, setPlayer] = useState([])
+
 
   useEffect(() => {
 
