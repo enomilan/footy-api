@@ -8,7 +8,7 @@ import './App.css';
 function App() {
 
   const [team, setTeam] = useState([])
-  const [player, setPlayer] = useState([])
+  const [players, setPlayers] = useState([])
 
 
   useEffect(() => {
@@ -36,6 +36,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <input type ='text'></input>
+
           {players.map((player) => {
               return {player}
           })}
