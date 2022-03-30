@@ -36,8 +36,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <input type ='text'></input>
-          {players.map((val, key) => {
-              return {val}
+          {players.map((player) => {
+              return {player}
           })}
         </p>
         
