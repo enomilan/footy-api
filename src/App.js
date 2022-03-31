@@ -30,6 +30,8 @@ function App() {
     fetchData()
 }, [])
 
+console.log(players)
+
   return (
     <div className="App">
       <header className="App-header">
