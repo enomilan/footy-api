@@ -13,6 +13,8 @@ function App() {
 
   useEffect(() => {
 
+
+    //change to then
     async function fetchData () {
         const res = await fetch('https://api-football-v1.p.rapidapi.com/v3/players?team=33&season=2020',
         {
