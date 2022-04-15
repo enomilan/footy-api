@@ -63,8 +63,3 @@
 
 let word = 'hello'
 
-for (let i = 0; i < word.length; i++) {
-
-  if word[i] = h ,    
-
-}
