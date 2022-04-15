@@ -56,10 +56,8 @@
 
 
 
-// Count each character occurrence in string and return an object 
-// For an example string “hello“ 
-// It will return an object {h: 1, e:1, l:2, o:1}
 
 
-let word = 'hello'
+
+
 
