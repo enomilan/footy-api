@@ -60,4 +60,13 @@
 
 
 
+var name = 'Vlocity'
 
+function foo() {
+  name = 'developer'
+  return;
+  function name() {}
+}
+
+foo()
+console.log(name)
