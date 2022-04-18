@@ -1,57 +1,57 @@
-import logo from './logo.svg';
-import {useEffect, useState} from 'react'
-import './App.css';
+// import logo from './logo.svg';
+// import {useEffect, useState} from 'react'
+// import './App.css';
 
 
 
 
-function App() {
+// function App() {
 
-  const [team, setTeam] = useState([])
-  const [players, setPlayers] = useState([])
-
-
-  useEffect(() => {
+//   const [team, setTeam] = useState([])
+//   const [players, setPlayers] = useState([])
 
 
-    //change to then
-    async function fetchData () {
-        const res = await fetch('https://api-football-v1.p.rapidapi.com/v3/players?team=33&season=2020',
-        {
-          "headers": {
-          "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-          "x-rapidapi-key": "xxxxxxx" }
-        })
-        const player = await res.json()
+//   useEffect(() => {
+
+
+//     //change to then
+//     async function fetchData () {
+//         const res = await fetch('https://api-football-v1.p.rapidapi.com/v3/players?team=33&season=2020',
+//         {
+//           "headers": {
+//           "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+//           "x-rapidapi-key": "ffef827568msh1decf807055fb86p1b5c15jsndfd56fb80151" }
+//         })
+//         const player = await res.json()
                                   
-        setPlayers(player)
+//         setPlayers(player)
             
         
-    }
+//     }
      
-    fetchData()
-}, [])
+//     fetchData()
+// }, [])
 
-console.log(players)
+// console.log(players)
 
-  return (
-    <div className="App">
-      <header className="App-header">
+//   return (
+//     <div className="App">
+//       <header className="App-header">
         
-        <p>
-          <input type ='text'></input>
+//         <p>
+//           <input type ='text'></input>
 
-          {players.map((player) => {
-              return {player}
-          })}
-        </p>
+//           {players.map((player) => {
+//               return {player}
+//           })}
+//         </p>
         
-      </header>
-    </div>
-  );
-}
+//       </header>
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
 
 
 
