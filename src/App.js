@@ -56,8 +56,3 @@
 
 
 
-
-
-
-
-console.log("Vlocity" && "Developer")
