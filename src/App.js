@@ -20,7 +20,7 @@ function App() {
         {
           "headers": {
           "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-          "x-rapidapi-key": "xxxx" }
+          "x-rapidapi-key": "xx" }
         })
         const player = await res.json()
                                   
